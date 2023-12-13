@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"hash/fnv"
 	"log"
-	"os"
 	"time"
 )
 
@@ -24,7 +23,7 @@ var cmdTable []GodisCommand = []GodisCommand{
 }
 
 func main() {
-	path := os.Args[1]
+	path := "config.json"
 	config, err := LoadConfig(path)
 	if err != nil {
 		log.Printf("config error: %v\n", err)

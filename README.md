@@ -1,4 +1,14 @@
 # go-redis  
+服务端运行 
+```shell
+go build -o godis
+./godis
+```
+
+客户端运行 
+```shell
+telnet 127.0.0.1 6767
+```
 redis整体架构：单线程  
 redis架构整体比数据结构细节重要  
 书：redis设计与实现  
